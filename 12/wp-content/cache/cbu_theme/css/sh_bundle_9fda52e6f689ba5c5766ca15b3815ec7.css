@@ -3297,17 +3297,75 @@ button {
   border-radius: 20px;
   width: 80%;
 }
+@media(max-width: 768px){
+  .grid_middle .pagesNav .inline-menu .menu-item a{
+    font-size: 16px !important;
+    padding-left: 10px;
+  }
+  .main_header .text-top{
+    font-size: 12px !important;
+  }
+  .how_icons{
+    padding: 0 20px;
+    max-width: 100% !important;
+  }
+  #mobile_bottom_call a{
+    background-color: #fae348 !important;
+    border: 0 !important;
+    color: #000 !important;
+    border-radius: 20px !important;
+  }
+  #mobile_bottom_call a:hover{
+    background-color: #fed103 !important;
+  }
+  .service-review-slide p{
+    font-size: 15px;
+  }
+  .service-review-date{
+    font-size: 21px !important;
+  }
+  .service-review-slide{
+    width: 60%;
+  }
+  .ew12{
+    display: block;
+    text-align: center;
+    max-width: 460px;
+    width: 100%;
+  }
+  .service-base .preview__list .price_item{
+    width: 32%;
+  }
+  .service-base .preview__list .price_item .price-wrapper{
+    margin-top: 20px !important;
+  }.advantage{
+    width: 32% !important;
+  }
+  .advantage__inner img{
+    width: 50% !important;
+  }
+}
 @media(max-width: 1000px){
+  .grid_middle .pagesNav .inline-menu .menu-item a{
+    padding-left: 10px;
+  }
   .ide12{
     padding-top: 10px;
     display: flex;
     justify-content: center;
     width: 100%;
   }
+  .pagesNav{
+    max-width: 100% !important;
+  }
   
 .ide12 img{
   max-width: 120px;
   border-radius: 20px;
+}
+.grid.grid_middle{
+  padding: 0 20px !important; 
+  justify-content: space-around !important;
 }
 }
 .master_slider:before {
