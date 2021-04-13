@@ -18,6 +18,18 @@ body .simple-sitemap-menu li {
   padding: 0;
 }
 
+@media(max-width: 1000px){
+  .container .reviews_slider{
+    flex-wrap: wrap;
+  }
+  .about_section.blue_bg{
+    padding: 10px 0 20px;
+  }
+  .contacts_section{
+    height: 750px !important; 
+  }
+}
+
 .simple-sitemap-wrap:not(:first-of-type) {
   margin-top: 1.5em;
 }
@@ -209,6 +221,10 @@ body .simple-sitemap-menu li {
   border: 1px solid #ddd;
   /*border-top: 4px solid #de5737;*/
   border-radius: 0 0 4px 4px;
+}
+#section_faq_group .panel{
+  width: 800px;
+  padding: 0 50PX;
 }
 
 /*@media only screen and (max-width: 500px) {
@@ -3275,11 +3291,25 @@ button {
   width: 120px;
   height: 120px;
 }
+
+
 .ide12 img{
   border-radius: 20px;
   width: 80%;
 }
-
+@media(max-width: 1000px){
+  .ide12{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+.ide12 img{
+  max-width: 120px;
+  border-radius: 20px;
+}
+}
 .master_slider:before {
   left: 0;
 }
@@ -3477,6 +3507,7 @@ button {
   max-width: 1000px;
 }
 .service-base .preview__list {
+  padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -4012,6 +4043,7 @@ button {
   text-align: center;
 }
 .about_section .about_content .about_item {
+  margin-bottom: 10px;
   text-align: center;
   float: none;
   display: inline-block;
