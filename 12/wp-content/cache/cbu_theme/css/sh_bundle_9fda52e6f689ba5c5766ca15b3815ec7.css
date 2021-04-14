@@ -18,15 +18,15 @@ body .simple-sitemap-menu li {
   padding: 0;
 }
 
-@media(max-width: 1000px){
-  .container .reviews_slider{
+@media (max-width: 1000px) {
+  .container .reviews_slider {
     flex-wrap: wrap;
   }
-  .about_section.blue_bg{
+  .about_section.blue_bg {
     padding: 10px 0 20px;
   }
-  .contacts_section{
-    height: 750px !important; 
+  .contacts_section {
+    height: 750px !important;
   }
 }
 
@@ -222,9 +222,9 @@ body .simple-sitemap-menu li {
   /*border-top: 4px solid #de5737;*/
   border-radius: 0 0 4px 4px;
 }
-#section_faq_group .panel{
+#section_faq_group .panel {
   width: 800px;
-  padding: 0 50PX;
+  padding: 0 50px;
 }
 
 /*@media only screen and (max-width: 500px) {
@@ -3095,9 +3095,8 @@ button {
   padding: 40px 0;
   color: #fff;
 }
-.section_faq .panel-heading:hover{
+.section_faq .panel-heading:hover {
   background-color: #f0a007 !important;
-
 }
 .body_footer .footer_logo svg {
   max-width: 100%;
@@ -3116,7 +3115,7 @@ button {
   margin: 30px 0;
   border-top: 2px dashed #f7c734;
 }
-.footer_contact_box a:hover{
+.footer_contact_box a:hover {
   background-color: #f0a007 !important;
 }
 .body_footer li a {
@@ -3130,7 +3129,7 @@ button {
   margin: 0 0 8px 0;
   font-size: 1em;
 }
-.footer_contact_box{
+.footer_contact_box {
   border: 2px solid;
   padding: 10px;
   border-radius: 10px;
@@ -3262,116 +3261,376 @@ button {
 
 /** MASTER *********************************************************************/
 
-.master-info__name{
+.master-info__name {
   padding: 6px;
   color: #00dd1c !important;
-}   
-.master-info__jobs .stroke{
+}
+.master-info__jobs .stroke {
   height: 0 !important;
 }
-.master-info__jobs .count:before, .master-info__jobs .count::after{
+.master-info__jobs .count:before,
+.master-info__jobs .count::after {
   display: none !important;
 }
-.master-info__exp{
+.master-info__exp ! {
   background: transparent !important;
 }
-.master-info__jobs{
+.master-info__jobs {
   padding: 6px;
 }
-.master-info__jobs .count{
+.master-info__jobs .count {
   background: #fae348 !important;
 }
-.ew12{
+.ew12 {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   max-width: 295px;
 }
-.ide12{
+.ide12 {
   width: 120px;
   height: 120px;
 }
 
-
-.ide12 img{
+.ide12 img {
   border-radius: 20px;
   width: 80%;
 }
-@media(max-width: 768px){
-  .grid_middle .pagesNav .inline-menu .menu-item a{
-    font-size: 16px !important;
+@media (max-width: 1000px) {
+  .grid_middle .pagesNav .inline-menu .menu-item a {
     padding-left: 10px;
   }
-  .main_header .text-top{
-    font-size: 12px !important;
+  .servicesNav {
+    padding: 0 10px;
   }
-  .how_icons{
-    padding: 0 20px;
-    max-width: 100% !important;
+  #menu-services-navigation {
+    display: flex !important;
+    flex-wrap: wrap;
+    margin-top: 66px;
+    margin-bottom: 63px;
   }
-  #mobile_bottom_call a{
-    background-color: #fae348 !important;
-    border: 0 !important;
-    color: #000 !important;
-    border-radius: 20px !important;
+  #mobile-menu-page-navigation {
+    display: none;
   }
-  #mobile_bottom_call a:hover{
-    background-color: #fed103 !important;
+  #menu-services-navigation li {
+    margin-bottom: 10px !important;
   }
-  .service-review-slide p{
-    font-size: 15px;
-  }
-  .service-review-date{
-    font-size: 21px !important;
-  }
-  .service-review-slide{
-    width: 60%;
-  }
-  .ew12{
-    display: block;
-    text-align: center;
-    max-width: 460px;
-    width: 100%;
-  }
-  .service-base .preview__list .price_item{
-    width: 32%;
-  }
-  .service-base .preview__list .price_item .price-wrapper{
-    margin-top: 20px !important;
-  }.advantage{
-    width: 32% !important;
-  }
-  .advantage__inner img{
-    width: 50% !important;
-  }
-}
-@media(max-width: 1000px){
-  .grid_middle .pagesNav .inline-menu .menu-item a{
-    padding-left: 10px;
-  }
-  .ide12{
+  .ide12 {
     padding-top: 10px;
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .pagesNav{
+  .pagesNav {
     max-width: 100% !important;
   }
-  
-.ide12 img{
-  max-width: 120px;
-  border-radius: 20px;
+
+  .ide12 img {
+    max-width: 120px;
+    border-radius: 20px;
+  }
+  .grid.grid_middle {
+    padding: 0 20px !important;
+    justify-content: space-around !important;
+  }
 }
-.grid.grid_middle{
-  padding: 0 20px !important; 
-  justify-content: space-around !important;
+@media (max-width: 768px) {
+  .skin .grid.grid_middle {
+    padding: 0px !important;
+  }
+  .grid_middle .pagesNav .inline-menu .menu-item a {
+    font-size: 16px !important;
+    padding-left: 10px;
+  }
+  .service-form-4 {
+    padding: 48px 0 70px 0 !important;
+  }
+  .service-review-slide {
+    margin-bottom: 10px !important;
+  }
+  .order_event.wpcf7-form-control.wpcf7-submit {
+    font-size: 15px !important;
+    text-align: center !important;
+    padding: 0 6px !important;
+  }
+  .contacts_section {
+    height: 675px !important;
+  }
+  .footer_menu {
+    order: 3;
+    margin-top: 30px;
+  }
+  .footer_logo {
+    max-width: 150px !important;
+  }
+  .master-item {
+    width: auto !important;
+  }
+  .master-info__exp {
+    background-color: #fff !important;
+  }
+  .container .photo_content_col {
+    display: block !important;
+    padding: 0 !important;
+  }
+  .main_header .text-top {
+    font-size: 12px !important;
+  }
+  .how_icons {
+    padding: 0 20px;
+    max-width: 100% !important;
+  }
+  #mobile_bottom_call a {
+    background-color: #fae348 !important;
+    border: 0 !important;
+    color: #000 !important;
+    border-radius: 20px !important;
+  }
+  #mobile_bottom_call a:hover {
+    background-color: #fed103 !important;
+  }
+  .advantages__slider.advantages-slider {
+    margin-bottom: 0;
+  }
+  .collapsed.wpls_noscroll {
+    text-align: center;
+  }
+  .section_faq {
+    height: 430px;
+  }
+  .about_section .about_content .about_item span {
+    font-size: 26px !important;
+  }
+  .about_section .about_content .about_item p {
+    font-size: 14px !important;
+  }
+  .service-review-slide p {
+    font-size: 15px;
+  }
+  .service-review-date {
+    font-size: 21px !important;
+  }
+  .service-review-slide {
+    padding-bottom: 10px;
+    width: 60%;
+  }
+  .ew12 {
+    display: block;
+    text-align: center;
+    max-width: 460px;
+    width: 100%;
+  }
+  .service-base .preview__list .price_item {
+    width: 32%;
+  }
+  .service-base .preview__list .price_item .price-wrapper {
+    margin-top: 20px !important;
+  }
+  .advantage {
+    width: 32% !important;
+  }
+  .advantage__inner img {
+    width: 50% !important;
+  }
 }
+@media (max-width: 500px) {
+  .main_logo {
+    max-width: 22% !important;
+  }
+  .skin .grid_middle .pagesNav .inline-menu .menu-item a {
+    font-size: 14px !important;
+  }
+  .how_icon .sqw {
+    max-width: 74px !important;
+  }
+  .service-base .preview__list .price_item .price-wrapper {
+    padding: 10px !important;
+  }
+  .service-base .preview__list .price_item {
+    width: 49% !important;
+  }
+  .page-id-146 .service-form-4 {
+    padding: 31px 0 15px 0 !important;
+  }
+  .wpcf7.nomodal_goal_inited {
+    display: flex;
+    justify-content: center;
+  }
+  .advantages-slider .advantage {
+    width: 49% !important;
+  }
+  .service-base .preview__list {
+    padding: 0 !important;
+  }
+  .how_icons {
+    flex-wrap: wrap;
+  }
+  .service-reviews {
+    padding-top: 28px !important;
+  }
+  .service-review-slide {
+    width: 93% !important;
+  }
+  .how_icon {
+    margin-bottom: 10px !important;
+  }
+  .how_icons .sqw {
+    margin-bottom: 0 !important;
+    margin-right: 20px;
+  }
+  .baner_form.clearfix {
+    margin-top: 0 !important;
+  }
+  .baner_form.clearfix {
+    margin-top: 26px;
+  }
+  .wpcf7-form.loginform {
+    width: 230px;
+  }
+  .pagesNav .container {
+    display: none;
+  }
+  #main_baner .baner_form form {
+    width: 230px !important;
+  }
+  .skin .grid.grid_middle{
+    justify-content: space-between !important; 
+    padding: 7px 10px !important;
+  }
+  .pagesNav{
+    max-width: 100% !important;
+    width: 100%;
+    min-width: 100%;
+    margin-top: 10px;
+  }
+  .grid_middle .pagesNav .inline-menu .menu-item a{
+    padding-left: 0;
+  }
+  #main_baner .wpcf7-submit{
+    min-width: auto !important;
+    padding: 0 14px !important;
+  }
+  .body_footer .footer_menu ul{
+    flex-wrap: wrap;
+  } 
+  .blockkk{
+    padding: 7px 10px !important;
+  }
+  .text_content_col h5, .text_content_col h6, .contacts_section .text_content_col p{
+    font-size: 14px !important; 
+  }
+  .baner_form.clearfix{
+    width: 83%;
+  }
+  .red{
+    width: 38%;
+  }
 }
+@media (max-width: 380px) {
+  .footer_contact_box .order_event{
+    width: 165px !important;
+    height: auto;
+  }
+  .footer_copy{
+    font-size: 12px;
+    padding-bottom: 34px;
+  }
+  .body_footer .call_text{
+    font-size: 14px;
+  }
+  .footer_logo{
+    max-width: 64px !important;
+  }
+  .footer_contact_box{
+    padding: 6px;
+  }
+  .body_footer li {
+    margin-left: 10px !important;
+  }
+  .body_footer li a{
+    font-size: 17px !important;
+  }
+  .contacts_section{
+    height: 510px !important;
+  }
+  .how_icons .sqw{
+    margin-right: 10px;
+    padding: 14px !important;
+    width: 55px !important ;
+  }
+  .baner_wrapper .how_icon .how_text{
+    font-size: 13px;
+  }
+  .service-review-slide{
+    width: 80% !important;
+  }
+  .service-review-slide p{
+    font-style: 13px;
+  }
+  .slide-body{
+    padding: 13px;
+  }
+  #main_baner .baner_form .before_form_text{
+    padding-top: 0 !important;
+  }
+  .master-item{
+    padding: 0 50px !important;
+    margin-bottom: 20px;
+  }
+  .master_slider{
+    margin-bottom: 0 !important;
+  }
+  section .title_row h2{
+    font-size: 24px !important;
+  }
+  .row.preview__list{
+    padding: 0 10px !important;
+  }
+  .service-base .preview__list .price_item .price-field{
+    padding-bottom: 9px !important;
+  }
+  .service-base .preview__list .price_item .preview .preview__img img{
+    margin-bottom: 11px !important;
+  }
+  .advantage{
+    padding: 4px 8px !important;
+  }
+  .section_faq .title_row{
+    margin-bottom: 0 !important;
+  }
+  .section_faq .panel-default .panel-heading .panel-title a{
+    font-size: 18px !important;
+  }
+  #section_faq_group .panel{
+    padding: 0 10px !important;
+  }
+  .about_section .about_content .about_item{
+    width: 148px !important;
+  }
+  .about_content .icon{
+    padding: 24px !important;
+  }
+  .about_section .about_content .about_item span{
+    font-size: 24px !important;
+  }
+  .about_section .about_content .about_item p{
+    font-size: 12px !important;
+  }
+  .about_section .title_row, .contacts_section .title_row{
+    margin-bottom: 10px !important;
+  }
+  .section_faq{
+    height: 500px !important;
+  }
+  .panel-body p{
+    font-size: 14px !important;
+  }
+}
+
 .master_slider:before {
   left: 0;
 }
-.master_slider{
+.master_slider {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -3541,20 +3800,20 @@ button {
 */
 
 /** SERVICES *********************************************************************/
-.advantage__inner img{
+.advantage__inner img {
   width: 115px;
-    height: 115px;
-    margin-bottom: 18px;
+  height: 115px;
+  margin-bottom: 18px;
 }
-.advantage__inner .r{
+.advantage__inner .r {
   display: flex;
   justify-content: center;
 }
-.advantage__inner .advantage__title{
+.advantage__inner .advantage__title {
   color: #f0a007;
   text-align: center;
 }
-.advantage__inner .advantage__text{
+.advantage__inner .advantage__text {
   text-align: center;
   font-size: 16px;
   color: #337ab7;
@@ -3577,7 +3836,7 @@ button {
 .service-base .preview__list .price_item .price-wrapper {
   padding: 20px;
   margin: 50px 0 0 0;
-  border: 2px solid #fae348 ;
+  border: 2px solid #fae348;
   border-radius: 14px;
   overflow: hidden;
 }
@@ -4113,11 +4372,9 @@ button {
   font-size: 35px;
   font-weight: 700;
 }
-.skin .grid_middle{
-  
+.skin .grid_middle {
   display: flex;
   justify-content: space-between;
-
 }
 .about_section .about_content .about_item p {
   font-size: 17px;
@@ -4645,10 +4902,10 @@ button {
 .service-form-3 .form-body {
   max-width: 540px;
 }
-.container .service-form-bg{
+.container .service-form-bg {
   width: 50% !important;
 }
-.section_faq .container{
+.section_faq .container {
   color: #337ab7;
 }
 /* service-form-4 */
@@ -4870,13 +5127,11 @@ button {
   display: block;
   position: relative;
   width: 41%;
-  
 }
 .price-wrapper a.order_event:hover {
   background-color: #f0a007 !important;
-
 }
-.main_header .text-top{
+.main_header .text-top {
   font-size: 16px;
   font-weight: 600;
 }
@@ -4885,7 +5140,7 @@ button {
 .section_faq {
   height: 500px;
 }
-.section_faq .panel-heading{
+.section_faq .panel-heading {
   transition: all 0.3s;
   border-radius: 20px;
   margin-bottom: 10px;
@@ -4894,11 +5149,11 @@ button {
   width: 100%;
   background-color: #fae348 !important;
 }
-.section_faq .panel-body{
+.section_faq .panel-body {
   border-radius: 20px;
   margin-bottom: 10px;
 }
-.main_header{
+.main_header {
 }
 .section_faq .panel-default {
   /* border: 1px solid #dadada; */
@@ -4910,7 +5165,7 @@ button {
   border: 1px solid #e6e6e6;
   background: #929b9c0d;
 }
-.pagesNav .container{
+.pagesNav .container {
   margin-top: 10px;
   padding: 10px 0;
   text-align: center;
@@ -4919,19 +5174,19 @@ button {
 }
 .section_faq .panel-default .panel-heading .panel-title {
 }
-.about_content{
+.about_content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.about_content .icon{
+.about_content .icon {
   padding: 20px;
 }
-.about_content .about_item{
+.about_content .about_item {
   border: 2px solid;
   border-radius: 20px;
   width: 190px !important;
-  padding:0 10px;
+  padding: 0 10px;
 }
 .section_faq .panel-default .panel-heading .panel-title a {
   display: block;
@@ -4953,7 +5208,7 @@ button {
 .section_faq .panel-default .panel-heading .panel-title a .bullet:after {
   content: url(../pointer.png);
   width: 20px;
-  height: 20px  ;
+  height: 20px;
 }
 .section_faq .panel-default .panel-heading .panel-title a.collapsed .bullet:after {
   transform: rotateZ(0deg);
@@ -6056,7 +6311,6 @@ button {
   }
 }
 @media only screen and (max-width: 768px) {
-
 }
 .visible-xs {
   display: none;
@@ -6066,7 +6320,7 @@ button {
     display: block;
   }
 }
-.footer_logo img{
+.footer_logo img {
   border-radius: 50%;
 }
 .skin {
@@ -6083,10 +6337,10 @@ button {
     padding-left: 10px;
   }
 }
-.photo_content_col{
+.photo_content_col {
   text-align: center;
 }
-.photo_content_col photo_content_col{
+.photo_content_col photo_content_col {
   width: 100% !important;
   padding: 0 200px;
 }
@@ -9124,10 +9378,10 @@ h1 {
 section .title_row h2.color_white {
   color: #fff;
 }
-.how_text{
+.how_text {
   text-align: center !important;
 }
-.how_icon .sqw{
+.how_icon .sqw {
   background-color: #fff;
   padding: 20px;
   border-radius: 50%;
