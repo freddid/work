@@ -4,45 +4,46 @@ $(function () {
       for (let a = 0; a < 10; a++) {
          $('.board').append("<span class = 'fred'><div> <span class = 'dot'> </span></div></span>")
          let f = i * 10 + a
+
          $($(".fred")[f]).attr('id', f)
+
          if (a == 0 || a == 9) {
             $($(".fred")[f]).text(i).addClass("letter")
          }
          if (i == 0 || i == 9) {
             $($(".fred")[f]).text(arr_EN[a]).addClass("letter")
          }
+
          $(".fred").toggleClass("black")
+
          if (i > 0 && i < 4) {
             $(".fred div").toggleClass('white dad')
-         }
-         if (i > 5 && i < 10) {
+         }else if (i > 5 && i < 10) {
             $(".fred div").toggleClass('dark dad')
          }
       }
+
       $(".fred").toggleClass("black")
       if (i > 0 && i < 4) {
          $(".fred div").toggleClass('white dad')
-      }
-      if (i > 5 && i < 10) {
+      }else if (i > 5 && i < 10) {
          $(".fred div").toggleClass('dark dad')
       }
    }
 
    $('.dad').on('click', function () {
-      let ths = $(this)
+      console.log(12)
       $('span').removeClass('active')
       let id = +$(this).parent(".fred").attr('id'),
-         pos2 = id - 9,
-         pos4 = id - 11;
-         
-      poss = [pos2, pos4];
-      for (let pos of poss) {
+         ths = $(this);
+
+      for (let pos of [id - 11, id - 9]) {
          if ($('#' + pos + ' div').attr('class') == '') {
             $('#' + pos + ' span').addClass('active')
          }
       }
       $('.active').on('click', function () {
-         $(this).parent('div').addClass('dad dark')
+         $(this).parent('div').addClass('dark dad')
          $('.active').removeClass('active')
          ths.removeClass('dad dark')
       })
